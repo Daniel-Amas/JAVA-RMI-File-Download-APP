@@ -1,0 +1,40 @@
+FileApp/
+├─ Server/
+│  ├─ FileServer.java
+│  ├─ FileImpl.java
+│  ├─ FileInterface.java
+FileApp/
+├─ Server/
+│  ├─ FileServer.java
+│  ├─ FileImpl.java
+│  ├─ FileInterface.java
+│  ├─ policy.txt
+├─ Client/
+│  ├─ FileClient.java
+│  ├─ FileInterface.java
+│  ├─ policy.txt
+FileApp/
+├─ Server/
+│  ├─ FileServer.java
+│  ├─ FileImpl.java
+│  ├─ FileInterface.java
+│  ├─ policy.txt
+├─ Client/
+│  ├─ FileClient.java
+│  ├─ FileInterface.java
+FileApp/
+├─ Server/
+│  ├─ FileServer.java
+│  ├─ FileImpl.java
+│  ├─ FileInterface.java
+│  ├─ policy.txt
+├─ Client/
+│  ├─ FileClient.java
+│  ├─ FileInterface.java
+│  ├─ policy.txt
+│  ├─ policy.txt
+│  ├─ policy.txt
+├─ Client/
+│  ├─ FileClient.java
+│  ├─ FileInterface.java
+│  ├─ policy.txt
