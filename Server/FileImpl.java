@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.rmi.RemoteException;
 import java.rmi.server.RemoteServer;
 import java.rmi.server.UnicastRemoteObject;
@@ -38,6 +39,25 @@ public class FileImpl implements FileInterface {
             System.out.println("FileImpl Exception: " + e.getMessage());
             e.printStackTrace();
             return null;
+        }
+    }
+
+    @Override
+    public void uploadFile(String fileName, byte[] fileData) throws RemoteException {
+        try {
+            String clientHost = RemoteServer.getClientHost();
+            System.out.println("Upload request recieved from client: " + clientHost);
+            System.out.println("Client is uploading file: " + fileName);
+
+            File file = new File(fileName);
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            fileOutputStream.write(fileData);
+            fileOutputStream.close();
+
+            System.out.println("'"+ fileName + "' uploaded successfully");
+        } catch (Exception e){
+            System.out.println("FileImpl Exception during upload: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
